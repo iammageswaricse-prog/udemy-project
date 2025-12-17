@@ -12,6 +12,9 @@ body{
     justify-content: space-between;
     border-bottom: solid black 2px;
     align-items: center;
+    position: sticky;
+    top:0;
+    background-color: white;
 }
 .navbar__s1__title{
     color: blueviolet;
@@ -30,6 +33,7 @@ body{
     border: none;
     width: 100%;
     font-size: 15px;
+    background-color: transparent;
 
 }
 .navbar__s2 input:focus{
@@ -39,6 +43,28 @@ body{
     display: flex;
     gap: 10px;
     align-items: center;
+}
+.mylearning{
+    position: relative;
+    cursor: pointer;
+    
+}
+.mylearning__popup{
+    display: none;
+    position: absolute;
+    top: 30px;
+    right:0;
+}
+
+.mylearning:hover .mylearning__popup{
+    display: block;
+    background-color: white;
+    padding: 10px;
+    border: solid gray 1px;
+    width: 100px;
+    height: auto;
+    box-shadow: 2px 2px 5px gray;
+
 }
 .categories{
     display: flex;
@@ -55,6 +81,16 @@ body{
 .sale-image img{
     width: 100%;
 }
+.sale-image__offer{
+    position:absolute;
+    top: 40%;
+    left:5%;
+    text-align: center;
+    width: 30%;
+    height: auto;
+    background-color: white;
+    border: solid black 1px;
+}
 .recommended{
     padding: 10px;
     
@@ -64,7 +100,6 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 margin-top: 10px;
-
 
 }
 .course__card{
