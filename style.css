@@ -74,9 +74,17 @@ body{
 }
 .categories p{
     background-color: #A435f0;
-    color:white;
+    color: white;
     padding: 10px;
     border-radius: 30px;
+
+}
+.categories p:hover{
+    background-color:transparent;
+    cursor: pointer;
+    transition: 1s;
+    color: black;
+    border-color: solid #A435f0 2px;
 }
 .sale-image img{
     width: 100%;
@@ -90,10 +98,19 @@ body{
     height: auto;
     background-color: white;
     border: solid black 1px;
+    animation-name: Zoom;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
-.recommended{
-    padding: 10px;
-    
+@keyframes Zoom{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 .recommended__container{
 display: flex;
